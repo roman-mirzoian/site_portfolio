@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+$font: 'Oswald', sans-serif;
+$color_progect: rgba(69,69,69,.8);
+@mixin font_brand {
+    font-family: $font;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    letter-spacing: .001em;
+    line-height: .7em;
+    text-transform: uppercase;
+    color: rgba(69,69,69,.8);
+}
+@mixin font_nav {
+    font-family: $font;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+    letter-spacing: .16em;
+    line-height: .1em;
+    text-transform: uppercase;
+    color: rgba(69,69,69,.8);
+}
+@mixin font_h {
+    font-family: $font;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 34px;
+    letter-spacing: .009em;
+    line-height: 1.5em;
+    text-transform: uppercase;
+}
+// header
+header {
+    max-width: 1700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 36px 10px 36px;
+    background-color: #fff;
+    box-shadow: 0px -10px 15px 4px #333;
+    .navbar-brand {
+        padding: 15px 4px;
+        @include font_brand();
+        &:hover {
+            color: black;
+        }
+    }
+    .nav-item>a {
+        @include font_nav();
+    }
+    @media (min-width: 1200px) {
+        .container {
+            max-width: 1440px;
+        }
+    }
+}
+
+// section preview
+.preview {
+    margin-top: 45px;
+    padding: 50px 40px;
+    .my-foto>img {
+        border-radius: 5%;
+    }
+    .pre-text {
+        h2 {
+            @include font_h();
+        }
+    }
+    @media (min-width: 1200px) {
+        .container {
+            max-width: 1440px;
+        }
+    }
+}
+
+
+// footer
+footer {
+    height: 200px;
+    background-color: #000;
+    .nav-item>a {
+        @include font_nav();
+        color: #b3b3b3;
+    }
+}
