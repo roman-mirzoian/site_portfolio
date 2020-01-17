@@ -41,6 +41,7 @@ header {
     padding: 10px 36px 10px 36px;
     background-color: #fff;
     box-shadow: 0px -10px 15px 4px #333;
+    
     .navbar-brand {
         padding: 15px 4px;
         @include font_brand();
@@ -63,11 +64,32 @@ header {
     margin-top: 45px;
     padding: 50px 40px;
     .my-foto>img {
+        width: 300px;
         border-radius: 5%;
     }
     .pre-text {
         h2 {
             @include font_h();
+            text-transform: none;
+        }
+        .download-button {
+            @include font_nav();
+            padding: 10px 40px;
+            // margin: 49px 0 30px 0;
+            width: 100%;
+            font-weight: normal;
+            letter-spacing: normal;
+            border: 1px solid #333;
+            border-radius: 0;
+            color: #fff;
+            background-color: $color_progect;
+            text-decoration: none;
+            transition: all .2s ease-in-out;
+            &:hover {
+                background-color: invert($color: $color_progect);
+                color: #000;
+            }
+            
         }
     }
     @media (min-width: 1200px) {
@@ -76,14 +98,125 @@ header {
         }
     }
 }
+// /section preview
 
+// project
+.project {
+    background-color: #ecf1f4;
+    .container {
+        h1 {
+            @include font_h();
+        }
+        // navigation
+        .list-inline {
+            width: max-content;
+        }
+        .list-inline>li {
+            display: inline-block;
+            padding-right: 5px;
+            padding-left: 5px;
+            button {
+                @include font_nav();
+                color: #fff;
+                padding: 10px 30px;
+                margin: 0 9px;
+                border: 1px solid #333;
+                display: block;
+                line-height: normal;
+                letter-spacing: normal;
+                font-weight: 400;
+                background: rgba(69, 69, 69, 0.8);
+                transition: background 0.2s linear;
+                &:hover {
+                    background-color: invert($color: $color_progect);
+                    color: #000;
+                }
+                &:focus {
+                    background: #fff;
+                    color: #000;
+                }
+            }
+        }
+        // /navigation
+        // portfolio wrap
+        .portfolio-wrapp {
+            width: 100%;
+            .dribble-shot {
+                position: relative;
+                background: transparent;
+                margin-top: 30px;
+                padding: 20px;
+                cursor: pointer;
+                overflow: hidden;
+                border: solid 2px rgba(69, 69, 69, 0.8);
+                transition: background 0.2s linear;
+                &:hover {
+                    background: rgba(69, 69, 69, 0.8);
+                }
+                img {
+                    width: 207px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+        
+
+    }
+}
+
+// contact
+.contact {
+    padding-bottom: 50px;
+    h1 {
+        @include font_h();
+    }
+    background-color: #ecf1f4;
+    .container {
+        width: 780px;
+        background-color: #fff;
+        .contact-details {
+            margin-top: 100px;
+        }
+        .contact-border {
+            border-left: solid 2px $color_progect;
+        }
+        form {
+            @include font_nav();
+            button {
+                margin: 29px 0 30px 0;
+                width: 100%;
+                border: 1px solid #333;
+                border-radius: 0;
+                color: #fff;
+                background-color: $color_progect;
+                padding: 10px 0;
+                transition: all .2s ease-in-out;
+                &:hover {
+                    background-color: invert($color: $color_progect);
+                    color: #000;
+                }
+            }
+        }
+        .text-right {
+            margin-bottom: 40px;
+            @include font_nav();
+            font-weight: 400;
+            line-height: normal;
+            text-transform: none;
+        }
+    }
+    
+}
+// /contact
 
 // footer
 footer {
-    height: 200px;
+    height: 100px;
     background-color: #000;
     .nav-item>a {
         @include font_nav();
         color: #b3b3b3;
     }
 }
+// /footer

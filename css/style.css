@@ -52,6 +52,7 @@ header .nav-item > a {
 }
 
 .preview .my-foto > img {
+  width: 300px;
   border-radius: 5%;
 }
 
@@ -63,6 +64,34 @@ header .nav-item > a {
   letter-spacing: .009em;
   line-height: 1.5em;
   text-transform: uppercase;
+  text-transform: none;
+}
+
+.preview .pre-text .download-button {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 15px;
+  letter-spacing: .16em;
+  line-height: .1em;
+  text-transform: uppercase;
+  color: rgba(69, 69, 69, 0.8);
+  padding: 10px 40px;
+  width: 100%;
+  font-weight: normal;
+  letter-spacing: normal;
+  border: 1px solid #333;
+  border-radius: 0;
+  color: #fff;
+  background-color: rgba(69, 69, 69, 0.8);
+  text-decoration: none;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.preview .pre-text .download-button:hover {
+  background-color: rgba(186, 186, 186, 0.8);
+  color: #000;
 }
 
 @media (min-width: 1200px) {
@@ -71,8 +100,163 @@ header .nav-item > a {
   }
 }
 
+.project {
+  background-color: #ecf1f4;
+}
+
+.project .container h1 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 34px;
+  letter-spacing: .009em;
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+
+.project .container .list-inline {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.project .container .list-inline > li {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.project .container .list-inline > li button {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 15px;
+  letter-spacing: .16em;
+  line-height: .1em;
+  text-transform: uppercase;
+  color: rgba(69, 69, 69, 0.8);
+  color: #fff;
+  padding: 10px 30px;
+  margin: 0 9px;
+  border: 1px solid #333;
+  display: block;
+  line-height: normal;
+  letter-spacing: normal;
+  font-weight: 400;
+  background: rgba(69, 69, 69, 0.8);
+  -webkit-transition: background 0.2s linear;
+  transition: background 0.2s linear;
+}
+
+.project .container .list-inline > li button:hover {
+  background-color: rgba(186, 186, 186, 0.8);
+  color: #000;
+}
+
+.project .container .list-inline > li button:focus {
+  background: #fff;
+  color: #000;
+}
+
+.project .container .portfolio-wrapp {
+  width: 100%;
+}
+
+.project .container .portfolio-wrapp .dribble-shot {
+  position: relative;
+  background: transparent;
+  margin-top: 30px;
+  padding: 20px;
+  cursor: pointer;
+  overflow: hidden;
+  border: solid 2px rgba(69, 69, 69, 0.8);
+  -webkit-transition: background 0.2s linear;
+  transition: background 0.2s linear;
+}
+
+.project .container .portfolio-wrapp .dribble-shot:hover {
+  background: rgba(69, 69, 69, 0.8);
+}
+
+.project .container .portfolio-wrapp .dribble-shot img {
+  width: 207px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact {
+  padding-bottom: 50px;
+  background-color: #ecf1f4;
+}
+
+.contact h1 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 34px;
+  letter-spacing: .009em;
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+
+.contact .container {
+  width: 780px;
+  background-color: #fff;
+}
+
+.contact .container .contact-details {
+  margin-top: 100px;
+}
+
+.contact .container .contact-border {
+  border-left: solid 2px rgba(69, 69, 69, 0.8);
+}
+
+.contact .container form {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 15px;
+  letter-spacing: .16em;
+  line-height: .1em;
+  text-transform: uppercase;
+  color: rgba(69, 69, 69, 0.8);
+}
+
+.contact .container form button {
+  margin: 29px 0 30px 0;
+  width: 100%;
+  border: 1px solid #333;
+  border-radius: 0;
+  color: #fff;
+  background-color: rgba(69, 69, 69, 0.8);
+  padding: 10px 0;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.contact .container form button:hover {
+  background-color: rgba(186, 186, 186, 0.8);
+  color: #000;
+}
+
+.contact .container .text-right {
+  margin-bottom: 40px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 15px;
+  letter-spacing: .16em;
+  line-height: .1em;
+  text-transform: uppercase;
+  color: rgba(69, 69, 69, 0.8);
+  font-weight: 400;
+  line-height: normal;
+  text-transform: none;
+}
+
 footer {
-  height: 200px;
+  height: 100px;
   background-color: #000;
 }
 

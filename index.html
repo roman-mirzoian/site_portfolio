@@ -17,37 +17,38 @@
   </head>
   
   <body>
+    <!-- header -->
     <header class="fixed-top">
       <div class="container px-0">
         <div class="row align-items-center">
-          <div class="col-md"><a class="navbar-brand" href="#">ROMAN MIRZOIAN / FRONT-END DEVELOPER</a></div>
+          <div class="col-md"><a class="navbar-brand" href="#preview">ROMAN MIRZOIAN / FRONT-END DEVELOPER</a></div>
           <div class="col-md px-0">
             <ul class="nav justify-content-end align-items-center">
               <li class="nav-item">
-                <a class="nav-link active" href="#">About Me</a>
+                <a class="nav-link active" href="#">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">My Project</a>
+                <a class="nav-link" href="#">Project</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact Me</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="https://t.me/ro_mirzo">
                   <span style="font-size: 30px; color: black;">
                     <i class="fab fa-telegram-plane"></i>
                   </span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="https://github.com/RomaMirzo">
                   <span style="font-size: 30px; color: black;">
                     <i class="fab fa-github"></i>
                   </span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="https://www.instagram.com/roman_mirzo_/">
                   <span style="font-size: 30px; color: black;">
                     <i class="fab fa-instagram"></i>
                   </span>
@@ -56,37 +57,131 @@
             </ul>
           </div>
         </div>
-        
-        
       </div>
     </header>
-    <section class="preview">
+    <!-- header -->
+
+    <!-- preview -->
+    <section class="preview" id="preview">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-md my-foto pl-0">
-            <img src="img/my_foto.png" alt="#" width="662" height="490">
+          <div class="col-md text-center my-foto pl-0">
+            <img src="img/my_foto.png" alt="#"> 
           </div>
           <div class="col-md pre-text">
-            <h2>I'm junior front-end developer.<br>Look at my portfolio site or go directly to look into my CV here.</h2>
+            <h2 class="mb-5"><b>Hello!</b><br>I'm junior <b>front-end</b> developer.</h2>
+            <a href="document/CV_RomanMirzoian.pdf" download class="download-button"><i class="far fa-file-pdf mr-3"></i>DOWNLOAD MY CV</a>
           </div>
         </div>
       </div>
     </section>
+    <!-- /preview -->
 
+    <!-- project -->
+    <section class="project">
+      <div class="container d-flex flex-column align-items-center">
+        <h1 class="mb-4">Project</h1>
+
+        <div class="row">
+          <div class="col-md-offset-2 col-md-8 text-center text-uppercase portofolio-menu"> 
+            <ul class="list-inline "> 
+              <li><button data-toggle="portfilter" data-target="all">All Categories</button></li> 
+              <li><button data-toggle="portfilter" data-target="branding">Layout</button></li> 
+              <li><button data-toggle="portfilter" data-target="ui">Front-end</button></li> 
+              <li><button data-toggle="portfilter" data-target="illustration">JavaScript</button></li> 
+            </ul> 
+          </div>
+        </div>
+
+        <div class="row portfolio-wrapp">
+          <div class="col-sm-3 col-md-3">
+            <div class="dribble-shot">
+              <img src="img/dribble_shot_marketika.PNG" alt="myDribble-shot" class="img-responsive">
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-3">
+            <div class="dribble-shot">
+              <img src="img/dribble_shot_someproject.PNG" alt="myDribble-shot" class="img-responsive">
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-3">
+            <div class="dribble-shot">
+              <img src="img/dribble_shot_films.PNG" alt="myDribble-shot" class="img-responsive">
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-3">
+            <div class="dribble-shot">
+              <img src="img/dribble_shot_pills.PNG" alt="myDribble-shot" class="img-responsive">
+            </div>
+          </div>
+          <!--<div class="col-sm-3 col-md-3">
+            <div class="dribble-shot">
+              <img src="img/dribble_shot_pills.PNG" alt="myDribble-shot" class="img-responsive">
+            </div>
+          </div>  -->
+        </div>
+
+      </div>
+    </section>
+
+    
+    <!-- /project -->
+
+    <!-- contact me -->
+    <section class="contact" id="contact">
+      <h1 class="d-flex justify-content-center p-4 mb-0">Contact me</h1>
+      <div class="container p-0">
+        <div class="row justify-content-center pt-4 pb-4 ">
+          <div class="col-md-5 pr-5 pl-0">
+            <form>
+              <div class="form-group">
+                <label for="textName" class="col-sm-2 col-form-label"><b>NAME</b></label>
+                <input type="text" class="form-control" id="textName">
+              </div>
+              <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 col-form-label"><b>EMAIL</b></label>
+                <input type="email" class="form-control" id="inputEmail3">
+              </div>
+              <div class="form-group mt-5">
+                <label for="FormControlTextarea1" class="mb-3 ml-3"><b>MESSAGE</b></label>
+                <textarea class="form-control" id="FormControlTextarea1" rows="3" style="resize: none;"></textarea>
+              </div>
+              <div class="form-group">
+                  <button type="submit" class="btn btn-primary">SEND ME MESSAGE</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-5 pr-0 contact-border">
+            <div class="contact-details">
+              <address class="text-right">
+                <b class="text-uppercase">Adress</b><br>
+                <span>Ukraine, Kyiv</span>
+              </address>
+              <address class="text-right">
+                <b class="text-uppercase">PHONE NUMBER</b><br>
+                <span>+38 (066) 505 5237</span>
+              </address>
+              <address class="text-right">
+                <b class="text-uppercase">Email</b><br>
+                <span>mirzo1930@gmail.com</span>
+              </address>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /contact me -->
 
     <footer class="d-flex justify-content-center align-items-center">
       <ul class="nav justify-content-center align-items-center">
         <li class="nav-item">
-          <a class="nav-link active" href="#">About Me</a>
+          <a class="nav-link active" href="#">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">My Project</a>
+          <a class="nav-link" href="#">Project</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact Me</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">My Online Certificates</a>
+          <a class="nav-link" href="#">Contact</a>
         </li>
       </ul>
       
