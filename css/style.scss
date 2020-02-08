@@ -2,17 +2,26 @@
     margin: 0;
     padding: 0;
 }
+html {
+    background-color: #242424;
+}
+
 $font: 'Oswald', sans-serif;
+
+$font_color_normal: #fff;
+$font_color_express: #059ed1;
 $color_progect: rgba(69,69,69,.8);
+$theme_color: #242424;
+
 @mixin font_brand {
     font-family: $font;
     font-weight: 700;
     font-style: normal;
-    font-size: 30px;
+    font-size: 18px;
     letter-spacing: .001em;
     line-height: .7em;
     text-transform: uppercase;
-    color: rgba(69,69,69,.8);
+    color: $font_color_express;
 }
 @mixin font_nav {
     font-family: $font;
@@ -22,26 +31,95 @@ $color_progect: rgba(69,69,69,.8);
     letter-spacing: .16em;
     line-height: .1em;
     text-transform: uppercase;
-    color: rgba(69,69,69,.8);
+    color: $font_color_normal;
 }
 @mixin font_h {
     font-family: $font;
-    font-weight: 400;
+    font-weight: normal;
     font-style: normal;
     font-size: 34px;
     letter-spacing: .009em;
     line-height: 1.5em;
     text-transform: uppercase;
+    color: $font_color_normal;
 }
+@mixin font_p {
+    font-family: $font;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    color: $font_color_normal;
+}
+// particles
+#particles-js, #particles-js-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+// swiper style
+html, body, .container-fluid {
+    position: relative;
+    height: 100%;
+  }
+.project {
+    height: 562px;
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+
+    .swiper-container {
+        width: 100%;
+        height: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            height: calc((100% - 30px) / 2);
+        
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+    }
+    .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: -14px 4px;
+    }
+    .swiper-pagination-bullet {
+        width: 18px;
+        height: 18px;
+        background: $font_color_express;
+    }
+}
+  
+  
+    
+
 // header
 header {
     max-width: 1700px;
     margin-left: auto;
     margin-right: auto;
-    padding: 10px 36px 10px 36px;
-    background-color: #fff;
-    box-shadow: 0px -10px 15px 4px #333;
-    
+    padding: 8px 16px;
+    background-color: #22262b;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.75);
     .navbar-brand {
         padding: 15px 4px;
         @include font_brand();
@@ -51,6 +129,13 @@ header {
     }
     .nav-item>a {
         @include font_nav();
+        .nav-icon {
+            font-size: 30px;
+            color: #059ed1;
+        }
+        &:hover {
+            color: black;
+        }
     }
     @media (min-width: 1200px) {
         .container {
@@ -61,8 +146,11 @@ header {
 
 // section preview
 .preview {
+    position: relative;
+    height: 100vh;
     margin-top: 45px;
     padding: 50px 40px;
+    background-color: $theme_color;
     .my-foto>img {
         width: 300px;
         border-radius: 5%;
@@ -71,6 +159,10 @@ header {
         h2 {
             @include font_h();
             text-transform: none;
+        }
+        .preview_express {
+            font-weight: 700;
+            color: $font_color_express;
         }
         .download-button {
             @include font_nav();
@@ -102,62 +194,24 @@ header {
 
 // project
 .project {
-    background-color: #ecf1f4;
-    .container {
+    height: 100vh;
+    background-color: $theme_color;
+    border-top: 2px solid #059ed1;
+    border-bottom: 2px solid #059ed1;
+    .container-fluid {
         h1 {
             @include font_h();
+            font-size: 50px;
+            letter-spacing: 10px;
+            color: rgba(255, 255, 255, 0.4);
+            font-weight: 700;
         }
-        // navigation
-        .list-inline {
-            width: max-content;
-        }
-        .list-inline>li {
-            display: inline-block;
-            padding-right: 5px;
-            padding-left: 5px;
-            button {
-                @include font_nav();
-                color: #fff;
-                padding: 10px 30px;
-                margin: 0 9px;
-                border: 1px solid #333;
-                display: block;
-                line-height: normal;
-                letter-spacing: normal;
-                font-weight: 400;
-                background: rgba(69, 69, 69, 0.8);
-                transition: background 0.2s linear;
-                &:hover {
-                    background-color: invert($color: $color_progect);
-                    color: #000;
-                }
-                &:focus {
-                    background: #fff;
-                    color: #000;
-                }
-            }
-        }
-        // /navigation
-        // portfolio wrap
-        .portfolio-wrapp {
+        .potrfol_img {
             width: 100%;
-            .dribble-shot {
-                position: relative;
-                background: transparent;
-                margin-top: 30px;
-                padding: 20px;
-                cursor: pointer;
-                overflow: hidden;
-                border: solid 2px rgba(69, 69, 69, 0.8);
-                transition: background 0.2s linear;
-                &:hover {
-                    background: rgba(69, 69, 69, 0.8);
-                }
-                img {
-                    width: 207px;
-                    margin-left: auto;
-                    margin-right: auto;
-                }
+            height: 100%;
+            img {
+                width: 100%;
+                height: 100%;
             }
         }
         
@@ -167,56 +221,72 @@ header {
 
 // contact
 .contact {
-    padding-bottom: 50px;
+    position: relative;
+    height: 100vh;
+    padding-top: 70px;
+    padding-bottom: 200px;
+    background-color: $theme_color;
+    border-top: 2px solid $font_color_express;
     h1 {
         @include font_h();
+        font-size: 50px;
+        letter-spacing: 10px;
+        color: rgba(255, 255, 255, 0.4);
+        font-weight: 700;
     }
-    background-color: #ecf1f4;
-    .container {
-        width: 780px;
-        background-color: #fff;
+    form {
+        margin-top: 5%;
+        margin-left: 10%;
+    }
+    .col-form-label {
+        @include font_p();
+    }
+    input, textarea {
+        max-width: 30%;
+        opacity: 0.5;
+    }
+    .btn-primary {
+        @include font_p();
+        background-color: $font_color_express;
+    }
+    footer {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        padding: 80px 30px 50px 30px;
+        z-index: 5;
         .contact-details {
-            margin-top: 100px;
-        }
-        .contact-border {
-            border-left: solid 2px $color_progect;
-        }
-        form {
-            @include font_nav();
-            button {
-                margin: 29px 0 30px 0;
-                width: 100%;
-                border: 1px solid #333;
-                border-radius: 0;
-                color: #fff;
-                background-color: $color_progect;
-                padding: 10px 0;
-                transition: all .2s ease-in-out;
-                &:hover {
-                    background-color: invert($color: $color_progect);
-                    color: #000;
+            p {
+                @include font_p();
+                color: $font_color_normal;
+                .foot-express {
+                    display: inline-block;
+                    font-size: 1rem;
+                    padding: 0 2rem;
+                    vertical-align: top;
+                    color: $font_color_express;
                 }
             }
         }
-        .text-right {
-            margin-bottom: 40px;
-            @include font_nav();
-            font-weight: 400;
-            line-height: normal;
-            text-transform: none;
+        .block_skew_top {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            z-index: -1;
+            bottom: 0;
+            background-color: #000000;
+            clip-path: polygon(0% 100%, 100% 100%, 100% 0, 100% 0%);
+            -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 100% 0%);
         }
     }
     
 }
 // /contact
 
-// footer
-footer {
-    height: 100px;
-    background-color: #000;
-    .nav-item>a {
-        @include font_nav();
-        color: #b3b3b3;
-    }
-}
-// /footer
+// about me
+// canvas {
+    // width: 100%;
+    // height: 25%;
+// }

@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- my css -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
+    
     <!-- project font -->
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap&subset=cyrillic" rel="stylesheet">
 
@@ -17,179 +20,191 @@
   </head>
   
   <body>
-    <!-- header -->
-    <header class="fixed-top">
-      <div class="container px-0">
-        <div class="row align-items-center">
-          <div class="col-md"><a class="navbar-brand" href="#preview">ROMAN MIRZOIAN / FRONT-END DEVELOPER</a></div>
-          <div class="col-md px-0">
-            <ul class="nav justify-content-end align-items-center">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Project</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://t.me/ro_mirzo">
-                  <span style="font-size: 30px; color: black;">
-                    <i class="fab fa-telegram-plane"></i>
-                  </span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://github.com/RomaMirzo">
-                  <span style="font-size: 30px; color: black;">
-                    <i class="fab fa-github"></i>
-                  </span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.instagram.com/roman_mirzo_/">
-                  <span style="font-size: 30px; color: black;">
-                    <i class="fab fa-instagram"></i>
-                  </span>
-                </a>
-              </li>
-            </ul>
-          </div>
+  <!-- header -->
+  <header class="fixed-top">
+    <div class="container px-0">
+      <div class="row align-items-center">
+        <div class="col-md"><a class="navbar-brand" href="#preview">ROMAN MIRZOIAN / FRONT-END DEVELOPER</a></div>
+        <div class="col-md px-0">
+          <ul class="nav justify-content-end align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://t.me/ro_mirzo" target="_blank">
+                <span class="nav-icon">
+                  <i class="fab fa-telegram-plane"></i>
+                </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/RomaMirzo" target="_blank">
+                <span class="nav-icon">
+                  <i class="fab fa-github"></i>
+                </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.instagram.com/roman_mirzo_/" target="_blank">
+                <span class="nav-icon">
+                  <i class="fab fa-instagram"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-    </header>
-    <!-- header -->
+    </div>
+  </header>
+  <!-- header -->
 
-    <!-- preview -->
-    <section class="preview" id="preview">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md text-center my-foto pl-0">
-            <img src="img/my_foto.png" alt="#"> 
-          </div>
-          <div class="col-md pre-text">
-            <h2 class="mb-5"><b>Hello!</b><br>I'm junior <b>front-end</b> developer.</h2>
-            <a href="document/CV_RomanMirzoian.pdf" download class="download-button"><i class="far fa-file-pdf mr-3"></i>DOWNLOAD MY CV</a>
-          </div>
+<!-- preview -->
+  <section class="preview">
+    <div id="particles-js"></div>
+    <div class="container h-100">
+      <div class="row h-100 text-center">
+        <div class="col my-auto pre-text">
+          <h2 class="mb-5"><span class="preview_express">Hello!</span><br>I'm junior <span class="preview_express">front-end</span> developer.</h2>
+          <a href="document/CV_RomanMirzoian.pdf" download class="download-button"><i class="far fa-file-pdf mr-3"></i>DOWNLOAD MY CV</a>
         </div>
       </div>
-    </section>
-    <!-- /preview -->
-
-    <!-- project -->
-    <section class="project">
-      <div class="container d-flex flex-column align-items-center">
-        <h1 class="mb-4">Project</h1>
-
-        <div class="row">
-          <div class="col-md-offset-2 col-md-8 text-center text-uppercase portofolio-menu"> 
-            <ul class="list-inline "> 
-              <li><button data-toggle="portfilter" data-target="all">All Categories</button></li> 
-              <li><button data-toggle="portfilter" data-target="branding">Layout</button></li> 
-              <li><button data-toggle="portfilter" data-target="ui">Front-end</button></li> 
-              <li><button data-toggle="portfilter" data-target="illustration">JavaScript</button></li> 
-            </ul> 
-          </div>
-        </div>
-
-        <div class="row portfolio-wrapp">
-          <div class="col-sm-3 col-md-3">
-            <div class="dribble-shot">
-              <img src="img/dribble_shot_marketika.PNG" alt="myDribble-shot" class="img-responsive">
-            </div>
-          </div>
-          <div class="col-sm-3 col-md-3">
-            <div class="dribble-shot">
-              <img src="img/dribble_shot_someproject.PNG" alt="myDribble-shot" class="img-responsive">
-            </div>
-          </div>
-          <div class="col-sm-3 col-md-3">
-            <div class="dribble-shot">
-              <img src="img/dribble_shot_films.PNG" alt="myDribble-shot" class="img-responsive">
-            </div>
-          </div>
-          <div class="col-sm-3 col-md-3">
-            <div class="dribble-shot">
-              <img src="img/dribble_shot_pills.PNG" alt="myDribble-shot" class="img-responsive">
-            </div>
-          </div>
-          <!--<div class="col-sm-3 col-md-3">
-            <div class="dribble-shot">
-              <img src="img/dribble_shot_pills.PNG" alt="myDribble-shot" class="img-responsive">
-            </div>
-          </div>  -->
-        </div>
-
-      </div>
-    </section>
+    </div>
+  </section>
+<!-- /preview -->
+  
 
     
-    <!-- /project -->
+  <!-- project -->
+  <section class="project">
+    <div class="container-fluid py-5 px-0">
+      <h1 class="ml-5">Portfolio</h1>
+      <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="https://romamirzo.github.io/layout_marketika/" target="_blank" class="potrfol_img">
+            <img src="img/dribble_shot_marketika.PNG" alt="myDribble-shot">
+          </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="https://romamirzo.github.io/layout_myCompany/" target="_blank" class="potrfol_img">
+              <img src="img/dribble_shot_someproject.PNG" alt="myDribble-shot">
+            </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="https://romamirzo.github.io/site_kino/" target="_blank" class="potrfol_img">
+            <img src="img/dribble_shot_films.PNG" alt="myDribble-shot">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="https://romamirzo.github.io/medicine_site/" target="_blank" class="potrfol_img">
+            <img src="img/dribble_shot_pills.PNG" alt="myDribble-shot">
+          </a>
+        </div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+        <div class="swiper-slide">Slide 10</div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+      </div>
+    </div>
 
-    <!-- contact me -->
-    <section class="contact" id="contact">
-      <h1 class="d-flex justify-content-center p-4 mb-0">Contact me</h1>
-      <div class="container p-0">
-        <div class="row justify-content-center pt-4 pb-4 ">
-          <div class="col-md-5 pr-5 pl-0">
-            <form>
-              <div class="form-group">
-                <label for="textName" class="col-sm-2 col-form-label"><b>NAME</b></label>
-                <input type="text" class="form-control" id="textName">
-              </div>
-              <div class="form-group">
-                <label for="inputEmail3" class="col-sm-2 col-form-label"><b>EMAIL</b></label>
-                <input type="email" class="form-control" id="inputEmail3">
-              </div>
-              <div class="form-group mt-5">
-                <label for="FormControlTextarea1" class="mb-3 ml-3"><b>MESSAGE</b></label>
-                <textarea class="form-control" id="FormControlTextarea1" rows="3" style="resize: none;"></textarea>
-              </div>
-              <div class="form-group">
-                  <button type="submit" class="btn btn-primary">SEND ME MESSAGE</button>
-              </div>
-            </form>
-          </div>
-          <div class="col-md-5 pr-0 contact-border">
-            <div class="contact-details">
-              <address class="text-right">
-                <b class="text-uppercase">Adress</b><br>
-                <span>Ukraine, Kyiv</span>
-              </address>
-              <address class="text-right">
-                <b class="text-uppercase">PHONE NUMBER</b><br>
-                <span>+38 (066) 505 5237</span>
-              </address>
-              <address class="text-right">
-                <b class="text-uppercase">Email</b><br>
-                <span>mirzo1930@gmail.com</span>
-              </address>
+  
+  </section>
+
+    
+  <!-- /project -->
+
+  <!-- about me -->
+  <div class="container-fluid">
+    <canvas id="canvas"></canvas>
+  </div>
+  
+  <!-- contact -->
+  <section class="contact">
+    <div id="particles-js-1"></div>
+    <div class="container-fluid h-100">
+      <div class="column h-100">
+        <h1 class="ml-5">IT'S TIME TO CONTACT</h1>
+        <div class="column my-auto">
+          
+          <form action="document/mail.php" method="POST">
+            <div class="form-group">
+              <label for="textName" class="col-sm-2 pt-0 col-form-label" >NAME</label>
+              <input type="text" class="form-control" id="textName" name="user_name" />
             </div>
-          </div>
+            <div class="form-group">
+              <label for="inputEmail3" class="col-sm-2 pt-0 col-form-label">EMAIL</label>
+              <input type="email" class="form-control" id="inputEmail3" name="user_email"/>
+            </div>
+            <div class="form-group">
+              <label for="FormControlTextarea1" class="ml-3 pt-0 col-form-label" >MESSAGE</label>
+              <textarea class="form-control" id="FormControlTextarea1" rows="3" style="resize: none;" name="user_message"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">SEND ME MESSAGE</button>
+            </div>
+          </form>
+          
         </div>
       </div>
-    </section>
-    <!-- /contact me -->
-
-    <footer class="d-flex justify-content-center align-items-center">
-      <ul class="nav justify-content-center align-items-center">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Project</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
-      
+    </div>
+    <footer>
+        <div class="contact-details">
+          <address class="text-right">
+            <p><span class="foot-express">Adress:</span> Ukraine, Kyiv</p>
+          </address>
+          <address class="text-right">
+            <p><span class="foot-express">Tel.:</span> +38 (066) 505 5237</p>
+          </address>
+          <address class="text-right">
+            <p><span class="foot-express">Email:</span> <a href="mailto:mirzo1930@gmail.com" style="text-decoration: none; color: #fff;">mirzo1930@gmail.com</a></p>
+          </address>
+        </div>
+      <div class="block_skew_top"></div>
     </footer>
+    
+  </section>
+<!-- /contact -->
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    <!-- my script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="js/script.js"></script>
+    <!-- particles -->
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+    
+    <!-- canvas skill perfomance -->
+    <script src="js/skill.js"></script>
+    <!-- swiper cdn -->
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      slidesPerColumn: 2,
+      spaceBetween: 1,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+    </script>
   </body>
 </html>
