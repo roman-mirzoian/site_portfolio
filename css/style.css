@@ -236,8 +236,8 @@ header .nav-item > a:hover {
 }
 
 .contact form {
-  margin-top: 5%;
   margin-left: 10%;
+  z-index: 500;
 }
 
 .contact .col-form-label {
@@ -265,6 +265,7 @@ header .nav-item > a:hover {
 }
 
 .contact footer {
+  height: 200px;
   position: absolute;
   bottom: 0;
   right: 0;
