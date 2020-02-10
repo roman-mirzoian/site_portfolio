@@ -11,10 +11,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
-    
+    <!-- aos app -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- project font -->
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-
     <title>Roman Mirzoian</title>
     <link rel="shortcut icon" type="image/x-icon" href="https://images.squarespace-cdn.com/content/v1/54ee0564e4b0dc9e9fc17cf1/1515433613825-2LEDN9I2PMUJD8LFLM1W/ke17ZwdGBToddI8pDm48kJycfsYb1urLU93EpFqOTQmoCXeSvxnTEQmG4uwOsdIceAoHiyRoc52GMN5_2H8Wp7zww8OjRrqjaM7_0x6HDLp42EP6IAa5vAmscK3sHI4MkNL5tmfZ3otlI9yi1IzH2Q/favicon.ico">
   </head>
@@ -22,19 +22,22 @@
   <body>
   <!-- header -->
   <header class="fixed-top">
-    <div class="container px-0">
+    <div class="container-fluid px-0">
       <div class="row align-items-center">
-        <div class="col-md"><a class="navbar-brand" href="#preview">ROMAN MIRZOIAN / FRONT-END DEVELOPER</a></div>
-        <div class="col-md px-0">
-          <ul class="nav justify-content-end align-items-center">
+        <div class="col-md-4"><a class="navbar-brand" href="#preview">ROMAN MIRZOIAN / FRONT-END DEVELOPER</a></div>
+        <div class="col-md-8 px-0">
+          <ul class="nav justify-content-end align-items-center navigation" id="navigation">
             <li class="nav-item">
-              <a class="nav-link active" href="#">About</a>
+              <a class="nav-link" href="javascript://0" onclick="slowScroll('#project')">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Project</a>
+              <a class="nav-link" href="javascript://0" onclick="slowScroll('#skills')">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link active" href="javascript://0" onclick="slowScroll('#about')">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript://0" onclick="slowScroll('#contact')">Contact</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://t.me/ro_mirzo" target="_blank">
@@ -64,26 +67,24 @@
   </header>
   <!-- header -->
 
-<!-- preview -->
-  <section class="preview">
-    <div id="particles-js"></div>
-    <div class="container h-100">
-      <div class="row h-100 text-center">
-        <div class="col my-auto pre-text">
-          <h2 class="mb-5"><span class="preview_express">Hello!</span><br>I'm junior <span class="preview_express">front-end</span> developer.</h2>
-          <a href="document/CV_RomanMirzoian.pdf" download class="download-button"><i class="far fa-file-pdf mr-3"></i>DOWNLOAD MY CV</a>
+  <!-- preview -->
+    <section class="preview" id="preview">
+      <div id="particles-js"></div>
+      <div class="container h-100" data-aos="fade-up" data-aos-duration="2000">
+        <div class="row h-100 text-center">
+          <div class="col my-auto pre-text">
+            <h2 class="mb-5"><span class="preview_express">Hello!</span><br>I'm junior <span class="preview_express">front-end</span> developer.</h2>
+            <a href="document/CV_RomanMirzoian.pdf" download class="download-button"><i class="far fa-file-pdf mr-3"></i>DOWNLOAD MY CV</a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-<!-- /preview -->
-  
-
+    </section>
+  <!-- /preview -->
     
   <!-- project -->
-  <section class="project">
+  <section class="project" id="project">
     <div class="container-fluid py-5 px-0">
-      <h1 class="ml-5 mb-5">Portfolio</h1>
+      <h1 class="ml-5 mb-5" data-aos="fade-right" data-aos-duration="1500">Portfolio</h1>
       <!-- Swiper -->
     <div class="swiper-container">
       <div class="swiper-wrapper">
@@ -127,27 +128,73 @@
     </div>
       </div>
     </div>
-
-  
   </section>
-
-    
   <!-- /project -->
-
-  <!-- about me -->
-  <div class="container-fluid">
-    <canvas id="canvas"></canvas>
-  </div>
   
+  <!-- skills -->
+    <section class="skills" id="skills">
+      <div class="container-fluid">
+        <h1 class="tall_h1 ml-5" data-aos="fade-right" data-aos-duration="1500">main skills</h1>
+        <div class="items-skills">
+          <ul class="list-skills" data-aos="fade-up-right">
+            <li>HTML</li>
+            <li>CSS(SASS)</li>
+            <li>JQUERY</li>
+            <li>BOOTSTRAP</li>
+            <li>JAVASCRIPT</li>
+            <li>GIT</li>
+          </ul>
+          <h3 data-aos="fade-left">front-end</h3>
+        </div>
+      </div>
+    </section>
+  <!-- /skills -->
+  
+  <!-- about -->
+  <section class="about" id="about">
+    <div class="container-fluid">
+      <h1 class="tall_h1 ml-5" data-aos="fade-right" data-aos-duration="1500">about me</h1>
+      <div class="items-about">
+        <div class="row">
+          <div class="col-md col-sm about-foto" data-aos="fade-right" data-aos-delay="50">
+            <div class="swiper-container1">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide text-center">
+                    <img src="img/my_foto_2.PNG" alt="#">
+                  </div>
+                  <div class="swiper-slide text-center">
+                    <img src="img/my_foto_1.PNG" alt="#">
+                  </div>
+              </div>
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+          </div>
+          </div>
+          <div class="col-md col-sm align-self-center about-text" data-aos="fade-left" data-aos-delay="50">
+            Hi! My name is Roman. I'm junior front-end developer.<br>
+            Graduated from KNUCA University.<br>Independently mastered the basic layout techniques 
+            and the basics of programming.<br>I have a little experience in development.<br>
+            I constantly improve my skills.<br>Cheerful and hardworking person. Responsible and 
+            moderately perfectionist.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /about -->
+
   <!-- contact -->
-  <section class="contact">
+  <section class="contact" id="contact">
     <div id="particles-js-1"></div>
     <div class="container-fluid h-100">
       <div class="column h-100">
-        <h1 class="ml-5">IT'S TIME TO CONTACT</h1>
+        <h1 class="ml-5" data-aos="fade-right" data-aos-duration="1500">IT'S TIME TO CONTACT</h1>
         <div class="column my-auto">
           
-        <form action="https://formcarry.com/s/519WABWEPwG" method="POST" accept-charset="UTF-8">
+        <form action="https://formcarry.com/s/519WABWEPwG" method="POST" accept-charset="UTF-8" data-aos="fade-up">
             <div class="form-group">
               <label for="textName" class="col-sm-2 pt-0 col-form-label" >NAME</label>
               <input type="text" class="form-control" id="textName" name="name" />
@@ -169,7 +216,7 @@
       </div>
     </div>
     <footer>
-        <div class="contact-details">
+        <div class="contact-details" data-aos="fade-up">
           <address class="text-right">
             <p><span class="foot-express">Adress:</span> Ukraine, Kyiv</p>
           </address>
@@ -182,35 +229,26 @@
         </div>
       <div class="block_skew_top"></div>
     </footer>
-    
   </section>
 <!-- /contact -->
     
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    
-    <!-- my script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-    <script src="js/script.js"></script>
-    <!-- particles -->
-    <script src="js/particles.js"></script>
-    <script src="js/app.js"></script>
-    
-    <!-- swiper cdn -->
-    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
-    <script>
-      var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 3,
-      slidesPerColumn: 2,
-      spaceBetween: 1,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-    });
-    </script>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<!-- jquery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+<!-- particles -->
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
+<!-- aos app -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/aosApp.js"></script>
+<!-- swiper cdn -->
+<script src="https://unpkg.com/swiper/js/swiper.js"></script>
+<script src="js/swiper.js"></script>
+<!-- slowScroll -->
+<script src="js/slowScroll.js"></script>
   </body>
 </html>

@@ -7,6 +7,21 @@ html {
   background-color: #242424;
 }
 
+.tall_h1 {
+  font-family: "Oswald", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 34px;
+  letter-spacing: .009em;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 50px;
+  letter-spacing: 10px;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 700;
+}
+
 #particles-js, #particles-js-1 {
   position: absolute;
   top: 0;
@@ -65,7 +80,6 @@ html, body, .container-fluid {
 }
 
 header {
-  max-width: 1700px;
   margin-left: auto;
   margin-right: auto;
   padding: 8px 16px;
@@ -87,7 +101,7 @@ header .navbar-brand {
 }
 
 header .navbar-brand:hover {
-  color: black;
+  color: white;
 }
 
 header .nav-item > a {
@@ -99,6 +113,7 @@ header .nav-item > a {
   line-height: .1em;
   text-transform: uppercase;
   color: #fff;
+  color: #059ed1;
 }
 
 header .nav-item > a .nav-icon {
@@ -106,14 +121,12 @@ header .nav-item > a .nav-icon {
   color: #059ed1;
 }
 
-header .nav-item > a:hover {
-  color: black;
+header .nav-item > a .nav-icon:hover {
+  color: white;
 }
 
-@media (min-width: 1200px) {
-  header .container {
-    max-width: 1440px;
-  }
+header .nav-item > a:hover {
+  color: white;
 }
 
 .preview {
@@ -180,7 +193,9 @@ header .nav-item > a:hover {
 }
 
 .project {
-  height: 100vh;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   background-color: #242424;
   border-top: 2px solid #059ed1;
   border-bottom: 2px solid #059ed1;
@@ -211,9 +226,126 @@ header .nav-item > a:hover {
   height: 100%;
 }
 
+.project .container-fluid .potrfol_img img:hover {
+  border: 2px solid #059ed1;
+}
+
+.skills {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding-top: 70px;
+}
+
+.skills .container-fluid {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.skills .container-fluid .items-skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 20px;
+}
+
+.skills .container-fluid .items-skills .list-skills > li {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  color: #fff;
+  margin: 20px 0;
+  list-style-type: none;
+  text-align: left;
+  font-size: 36px;
+  line-height: 1em;
+  letter-spacing: 12px;
+  position: relative;
+  padding: 4% 0;
+  color: white;
+}
+
+.skills .container-fluid .items-skills .list-skills > li:hover {
+  -webkit-transition: .2s;
+  transition: .2s;
+  text-decoration: line-through;
+}
+
+.skills .container-fluid .items-skills h3 {
+  margin-left: 40px;
+  font-size: 55px;
+  text-transform: uppercase;
+  color: #1c9ed7;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.skills .container-fluid .items-skills h3:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.about {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.about .container-fluid {
+  height: 100%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  border-top: 2px solid #059ed1;
+}
+
+.about .container-fluid .tall_h1 {
+  margin-bottom: 50px;
+}
+
+.about .container-fluid .items-about .row .about-foto .swiper-container1 {
+  width: 600px;
+  height: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+}
+
+.about .container-fluid .items-about .row .about-foto .swiper-container1 img {
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 5%;
+}
+
+.about .container-fluid .items-about .row .about-text {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  color: #fff;
+}
+
 .contact {
   position: relative;
-  height: 100vh;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   padding-top: 70px;
   padding-bottom: 200px;
   background-color: #242424;
