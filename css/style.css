@@ -22,6 +22,12 @@ html {
   font-weight: 700;
 }
 
+@media (max-width: 768px) {
+  .tall_h1 {
+    font-size: 30px;
+  }
+}
+
 #particles-js, #particles-js-1 {
   position: absolute;
   top: 0;
@@ -104,6 +110,12 @@ header .navbar-brand:hover {
   color: white;
 }
 
+@media (max-width: 768px) {
+  header .navbar-brand {
+    display: none;
+  }
+}
+
 header .nav-item > a {
   font-family: "Oswald", sans-serif;
   font-weight: 700;
@@ -114,6 +126,18 @@ header .nav-item > a {
   text-transform: uppercase;
   color: #fff;
   color: #059ed1;
+}
+
+@media (max-width: 375px) {
+  header .nav-item > a {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 320px) {
+  header .nav-item > a {
+    font-size: 10px;
+  }
 }
 
 header .nav-item > a .nav-icon {
@@ -135,6 +159,12 @@ header .nav-item > a:hover {
   margin-top: 45px;
   padding: 50px 40px;
   background-color: #242424;
+}
+
+@media (max-width: 768px) {
+  .preview {
+    padding: 0;
+  }
 }
 
 .preview .my-foto > img {
@@ -201,19 +231,17 @@ header .nav-item > a:hover {
   border-bottom: 2px solid #059ed1;
 }
 
-.project .container-fluid h1 {
-  font-family: "Oswald", sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 34px;
-  letter-spacing: .009em;
-  line-height: 1.5em;
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 50px;
-  letter-spacing: 10px;
-  color: rgba(255, 255, 255, 0.4);
-  font-weight: 700;
+@media (max-width: 768px) {
+  .project .container-fluid {
+    padding-top: 5% !important;
+    padding-bottom: 5% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .project .container-fluid .tall_h1 {
+    margin-bottom: 5% !important;
+  }
 }
 
 .project .container-fluid .potrfol_img {
@@ -237,11 +265,24 @@ header .nav-item > a:hover {
   padding-top: 70px;
 }
 
+@media (max-width: 768px) {
+  .skills {
+    padding-top: 5%;
+  }
+}
+
 .skills .container-fluid {
   margin: 0 auto;
   width: 100%;
   height: 100%;
   position: relative;
+}
+
+@media (max-width: 768px) {
+  .skills .container-fluid .tall_h1 {
+    margin: 0 !important;
+    text-align: center;
+  }
 }
 
 .skills .container-fluid .items-skills {
@@ -255,6 +296,15 @@ header .nav-item > a:hover {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .skills .container-fluid .items-skills {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .skills .container-fluid .items-skills .list-skills > li {
@@ -275,6 +325,14 @@ header .nav-item > a:hover {
   color: white;
 }
 
+@media (max-width: 768px) {
+  .skills .container-fluid .items-skills .list-skills > li {
+    font-size: 20px;
+    letter-spacing: 8px;
+    margin: 2%;
+  }
+}
+
 .skills .container-fluid .items-skills .list-skills > li:hover {
   -webkit-transition: .2s;
   transition: .2s;
@@ -290,6 +348,18 @@ header .nav-item > a:hover {
           transform: rotate(90deg);
 }
 
+@media (max-width: 768px) {
+  .skills .container-fluid .items-skills h3 {
+    -webkit-transform: none;
+            transform: none;
+    font-size: 30px;
+    margin: 0;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+}
+
 .skills .container-fluid .items-skills h3:hover {
   -webkit-transition: .5s;
   transition: .5s;
@@ -298,9 +368,8 @@ header .nav-item > a:hover {
 }
 
 .about {
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+  width: 100%;
+  overflow: hidden;
 }
 
 .about .container-fluid {
@@ -310,8 +379,22 @@ header .nav-item > a:hover {
   border-top: 2px solid #059ed1;
 }
 
+@media (max-width: 768px) {
+  .about .container-fluid {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+}
+
 .about .container-fluid .tall_h1 {
   margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .about .container-fluid .tall_h1 {
+    font-size: 30px;
+    margin-bottom: 5%;
+  }
 }
 
 .about .container-fluid .items-about .row .about-foto .swiper-container1 {
@@ -326,10 +409,23 @@ header .nav-item > a:hover {
   z-index: 1;
 }
 
+@media (max-width: 600px) {
+  .about .container-fluid .items-about .row .about-foto .swiper-container1 {
+    max-width: 100%;
+    height: 100%;
+  }
+}
+
 .about .container-fluid .items-about .row .about-foto .swiper-container1 img {
   max-height: 100%;
   max-width: 100%;
   border-radius: 5%;
+}
+
+@media (max-width: 600px) {
+  .about .container-fluid .items-about .row .about-foto .swiper-container1 img {
+    max-width: 70%;
+  }
 }
 
 .about .container-fluid .items-about .row .about-text {
@@ -339,6 +435,13 @@ header .nav-item > a:hover {
   font-size: 18px;
   letter-spacing: 0.1em;
   color: #fff;
+}
+
+@media (max-width: 768px) {
+  .about .container-fluid .items-about .row .about-text {
+    padding-top: 5%;
+    padding-left: 5%;
+  }
 }
 
 .contact {
@@ -352,19 +455,17 @@ header .nav-item > a:hover {
   border-top: 2px solid #059ed1;
 }
 
-.contact h1 {
-  font-family: "Oswald", sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 34px;
-  letter-spacing: .009em;
-  line-height: 1.5em;
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 50px;
-  letter-spacing: 10px;
-  color: rgba(255, 255, 255, 0.4);
-  font-weight: 700;
+@media (max-width: 768px) {
+  .contact {
+    padding-top: 5%;
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact .tall_h1 {
+    margin: 0 !important;
+  }
 }
 
 .contact form {
@@ -386,6 +487,12 @@ header .nav-item > a:hover {
   opacity: 0.5;
 }
 
+@media (max-width: 768px) {
+  .contact input, .contact textarea {
+    max-width: 80%;
+  }
+}
+
 .contact .btn-primary {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -404,6 +511,21 @@ header .nav-item > a:hover {
   left: 0;
   padding: 80px 30px 50px 30px;
   z-index: 5;
+}
+
+@media (max-width: 768px) {
+  .contact footer {
+    position: relative;
+    height: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact footer .contact-details address {
+    text-align: center !important;
+  }
 }
 
 .contact footer .contact-details p {

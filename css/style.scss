@@ -70,6 +70,10 @@ html {
 }
 .tall_h1 {
     @include font_tall_h1();
+
+    @media (max-width: 768px) {
+        font-size: 30px;
+    }
 }
 // /all
 // particles
@@ -132,27 +136,31 @@ html, body, .container-fluid {
   
 // header
 header {
-    // width: 100vw;
-    // max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
     padding: 8px 16px;
     background-color: #22262b;
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.75);
-    .container-fluid {
-        // width: 100%;
-        // max-width: 1440px;
-    }
+
     .navbar-brand {
         padding: 15px 4px;
         @include font_brand();
         &:hover {
             color: white;
         }
+        @media (max-width: 768px) {
+            display: none;
+        }
     }
     .nav-item>a {
         @include font_nav();
         color: #059ed1;
+        @media (max-width: 375px) {
+            font-size: 13px;
+        }
+        @media (max-width: 320px) {
+            font-size: 10px;
+        }
         .nav-icon {
             font-size: 30px;
             color: #059ed1;
@@ -173,6 +181,11 @@ header {
     margin-top: 45px;
     padding: 50px 40px;
     background-color: $theme_color;
+
+    @media (max-width: 768px) {
+        padding: 0;
+    }
+
     .my-foto>img {
         width: 300px;
         border-radius: 5%;
@@ -219,13 +232,16 @@ header {
     background-color: $theme_color;
     border-top: 2px solid #059ed1;
     border-bottom: 2px solid #059ed1;
+
     .container-fluid {
-        h1 {
-            @include font_h();
-            font-size: 50px;
-            letter-spacing: 10px;
-            color: rgba(255, 255, 255, 0.4);
-            font-weight: 700;
+        @media (max-width: 768px) {
+            padding-top: 5%!important;
+            padding-bottom: 5%!important;
+        }
+        .tall_h1 {
+            @media (max-width: 768px) {
+                margin-bottom: 5%!important;
+            }
         }
         .potrfol_img {
             width: 100%;
@@ -245,17 +261,31 @@ header {
 .skills {
     height: max-content;
     padding-top: 70px;
+
+    @media (max-width: 768px) {
+        padding-top: 5%;
+    }
+
     .container-fluid {
         margin: 0 auto;
         width: 100%;
         height: 100%;
         position: relative;
-
+        .tall_h1 {
+            @media (max-width: 768px) {
+                margin: 0!important;
+                text-align: center;
+            }
+        }
         .items-skills {
             display: flex;
             justify-content: center;
             align-items: center;
             padding-bottom: 20px;
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
 
             .list-skills>li {
                 @include font_p();
@@ -269,6 +299,12 @@ header {
                 padding: 4% 0;
                 color: white;
 
+                @media (max-width: 768px) {
+                    font-size: 20px;
+                    letter-spacing: 8px;
+                    margin: 2%;
+                }
+
                 &:hover {
                     transition: .2s;
                     text-decoration: line-through;
@@ -280,6 +316,14 @@ header {
                 text-transform: uppercase;
                 color: #1c9ed7;
                 transform: rotate(90deg);
+
+                @media (max-width: 768px) {
+                    transform: none;
+                    font-size: 30px;
+                    margin: 0;
+                    order: -1;
+                }
+
                 &:hover {
                     transition: .5s;
                     transform: rotate(360deg);
@@ -292,14 +336,28 @@ header {
 
 // about
 .about {
-    height: max-content;
+    width: 100%;
+    overflow: hidden;
+
+    
+
     .container-fluid {
         height: 100%;
         padding-top: 70px;
         padding-bottom: 70px;
         border-top: 2px solid #059ed1;
+
+        @media (max-width: 768px) {
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+
         .tall_h1 {
             margin-bottom: 50px;
+            @media (max-width: 768px) {
+                font-size: 30px;
+                margin-bottom: 5%;
+            }
         }
         .items-about {
             .row {
@@ -314,15 +372,31 @@ header {
                         list-style: none;
                         padding: 0;
                         z-index: 1;
+
+                        @media (max-width: 600px) {
+                            max-width: 100%;
+                            height: 100%
+                        }
+
                         img {
                             max-height: 100%;
                             max-width: 100%;
                             border-radius: 5%;
+
+                            @media (max-width: 600px) {
+                                max-width: 70%;
+                                // max-height: 70%
+                            }
                         }
                     }
                 }
                 .about-text {
                     @include font_p();
+
+                    @media (max-width: 768px) {
+                        padding-top: 5%;
+                        padding-left: 5%;
+                    }
                 }
             }
         }
@@ -338,13 +412,18 @@ header {
     padding-bottom: 200px;
     background-color: $theme_color;
     border-top: 2px solid $font_color_express;
-    h1 {
-        @include font_h();
-        font-size: 50px;
-        letter-spacing: 10px;
-        color: rgba(255, 255, 255, 0.4);
-        font-weight: 700;
+
+    @media (max-width: 768px) {
+        padding-top: 5%;
+        padding-bottom: 0;
     }
+
+    .tall_h1 {
+        @media (max-width: 768px) {
+            margin: 0!important;
+        }
+    }
+    
     form {
         margin-left: 10%;
         z-index: 500;
@@ -355,6 +434,11 @@ header {
     input, textarea {
         max-width: 30%;
         opacity: 0.5;
+
+        @media (max-width: 768px) {
+            max-width: 80%;;
+        }
+
     }
     .btn-primary {
         @include font_p();
@@ -368,7 +452,20 @@ header {
         left: 0;
         padding: 80px 30px 50px 30px;
         z-index: 5;
+
+        @media (max-width: 768px) {
+            position: relative;
+            height: 100%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
         .contact-details {
+            address {
+                @media (max-width: 768px) {
+                    text-align: center!important;
+                }
+            }
             p {
                 @include font_p();
                 color: $font_color_normal;
