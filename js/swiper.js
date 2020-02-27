@@ -12,7 +12,7 @@ var swiper = new Swiper('.swiper-container', {
         slidesPerColumn: 2,
       },
       1024: {
-        slidesPerView: 2,
+        slidesPerView: 3,
         slidesPerColumn: 2
       },
       768: {
