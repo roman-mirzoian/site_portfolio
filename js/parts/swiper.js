@@ -1,4 +1,5 @@
-var swiper = new Swiper('.swiper-container', {
+function swiper() {
+  var swiper = new Swiper('.swiper-container', {
     slidesPerView: 3,
     slidesPerColumn: 2,
     spaceBetween: 1,
@@ -30,4 +31,6 @@ var swiper = new Swiper('.swiper-container', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-  });
+  });}
+
+  module.exports = swiper;

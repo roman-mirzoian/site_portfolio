@@ -6,6 +6,7 @@ $font_color_express: #059ed1;
 $color_progect: rgba(69,69,69,.8);
 $theme_color: #242424;
 // /variables
+
 // mixin
 @mixin font_brand {
     font-family: $font;
@@ -66,7 +67,7 @@ $theme_color: #242424;
     padding: 0;
 }
 html {
-    background-color: #242424;
+    background-color: $theme_color;
 }
 .tall_h1 {
     @include font_tall_h1();
@@ -249,6 +250,7 @@ header {
             img {
                 width: 100%;
                 height: 100%;
+                border: 2px solid #242424;
                 &:hover {
                     border: 2px solid #059ed1;
                 }

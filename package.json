@@ -1,0 +1,35 @@
+{
+  "name": "my_site_portfolio",
+  "version": "1.0.0",
+  "description": "site portfolio",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "webpack-cli": "^3.3.11"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-flow": "^7.9.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "babel-preset-es2015": "^6.24.1",
+    "webpack": "^4.42.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RomaMirzo/site_portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Roman <mirzo1930@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RomaMirzo/site_portfolio/issues"
+  },
+  "homepage": "https://github.com/RomaMirzo/site_portfolio#readme"
+}
