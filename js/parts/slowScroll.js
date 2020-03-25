@@ -1,4 +1,4 @@
-function slowScroll() {
+function slowScrollToItem() {
 
   let portfolioBtn = document.getElementById('portfolioBtn'),
       skillsBtn = document.getElementById('skillsBtn'),
@@ -27,4 +27,4 @@ function slowScroll() {
   })
 }
 
-module.exports = slowScroll;
+module.exports = slowScrollToItem;

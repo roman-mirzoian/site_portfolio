@@ -141,7 +141,7 @@ module.exports = aosApp;
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-function slowScroll() {
+function slowScrollToItem() {
   var portfolioBtn = document.getElementById('portfolioBtn'),
       skillsBtn = document.getElementById('skillsBtn'),
       aboutBtn = document.getElementById('aboutBtn'),
@@ -169,7 +169,7 @@ function slowScroll() {
   });
 }
 
-module.exports = slowScroll;
+module.exports = slowScrollToItem;
 
 /***/ }),
 
@@ -231,11 +231,11 @@ window.addEventListener('DOMContentLoaded', function () {
   "use strict";
 
   var aosApp = __webpack_require__(/*! ./parts/aosApp */ "./js/parts/aosApp.js"),
-      slowScroll = __webpack_require__(/*! ./parts/slowScroll */ "./js/parts/slowScroll.js"),
+      slowScrollToItem = __webpack_require__(/*! ./parts/slowScroll */ "./js/parts/slowScroll.js"),
       swiper = __webpack_require__(/*! ./parts/swiper */ "./js/parts/swiper.js");
 
   aosApp();
-  slowScroll();
+  slowScrollToItem();
   swiper();
 });
 
