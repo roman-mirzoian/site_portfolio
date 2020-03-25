@@ -142,6 +142,11 @@ module.exports = aosApp;
 /***/ (function(module, exports) {
 
 function slowScroll() {
+  var portfolioBtn = document.getElementById('portfolioBtn'),
+      skillsBtn = document.getElementById('skillsBtn'),
+      aboutBtn = document.getElementById('aboutBtn'),
+      contactBtn = document.getElementById('contactBtn');
+
   function slowScroll(id) {
     var offset = 70;
     $('html, body').animate({
@@ -149,6 +154,19 @@ function slowScroll() {
     }, 500);
     return false;
   }
+
+  portfolioBtn.addEventListener('click', function () {
+    slowScroll("#project");
+  });
+  skillsBtn.addEventListener('click', function () {
+    slowScroll("#skills");
+  });
+  aboutBtn.addEventListener('click', function () {
+    slowScroll("#about");
+  });
+  contactBtn.addEventListener('click', function () {
+    slowScroll("#contact");
+  });
 }
 
 module.exports = slowScroll;
