@@ -4,8 +4,10 @@ window.addEventListener('DOMContentLoaded', function () {
 
     let aosApp = require('./parts/aosApp'),
         slowScrollToItem = require('./parts/slowScroll'),
-        swiper = require('./parts/swiper');
-
+        swiper = require('./parts/swiper'),
+        swiperItem = require('./parts/projectSwiperSite');
+    
+    swiperItem();
     aosApp();
     slowScrollToItem();
     swiper();
