@@ -42,7 +42,11 @@ reactMovieApp = {
     src: "img/dribble_shot_reactMovieApp.PNG"
 };
 
-const siteInfo = [marketika, myCompany, siteKino, medicineSite, portfolio, passwordGenerator, snakeGame, converter, stubbsTest, reactMovieApp];
+const siteInfo = [
+  marketika, myCompany, siteKino,
+  medicineSite, portfolio, passwordGenerator,
+  snakeGame, converter, stubbsTest, reactMovieApp];
+  
 const reverseSiteInfo = siteInfo.reverse();
 const swiperDiv = document.getElementsByClassName("swiper-wrapper")[0];
 
