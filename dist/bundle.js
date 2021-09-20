@@ -121,7 +121,7 @@ function aosApp() {
     // values from 0 to 3000, with step 50ms
     easing: 'ease',
     // default easing for AOS animations
-    once: false,
+    once: true,
     // whether animation should happen only once - while scrolling down
     mirror: false,
     // whether elements should animate out while scrolling past them
@@ -145,43 +145,43 @@ function SwiperItem() {
   "use strict";
 
   var marketika = {
-    href: "https://romamirzo.github.io/layout_marketika/",
+    href: "https://roman-mirzoian.github.io/layout_marketika/",
     src: "img/dribble_shot_marketika.PNG"
   },
       myCompany = {
-    href: "https://romamirzo.github.io/layout_myCompany/",
+    href: "https://roman-mirzoian.github.io/layout_myCompany/",
     src: "img/dribble_shot_someproject.PNG"
   },
       siteKino = {
-    href: "https://romamirzo.github.io/site_kino/",
+    href: "https://roman-mirzoian.github.io/site_kino/",
     src: "img/dribble_shot_films.PNG"
   },
       medicineSite = {
-    href: "https://romamirzo.github.io/medicine_site/",
+    href: "https://roman-mirzoian.github.io/medicine_site/",
     src: "img/dribble_shot_pills.PNG"
   },
       portfolio = {
-    href: "https://romamirzo.github.io/site_portfolio/",
+    href: "https://roman-mirzoian.github.io/site_portfolio/",
     src: "img/dribble_shot_portfolio.PNG"
   },
       passwordGenerator = {
-    href: "https://romamirzo.github.io/jsLoginPasswordGenerator/",
+    href: "https://roman-mirzoian.github.io/jsLoginPasswordGenerator/",
     src: "img/dribble_shot_generator.PNG"
   },
       snakeGame = {
-    href: "https://romamirzo.github.io/snake_game/",
+    href: "https://roman-mirzoian.github.io/snake_game/",
     src: "img/dribble_shot_snake.PNG"
   },
       converter = {
-    href: "https://romamirzo.github.io/currencyConverterAjax/",
+    href: "https://roman-mirzoian.github.io/currencyConverterAjax/",
     src: "img/dribble_shot_converter.PNG"
   },
       stubbsTest = {
-    href: "https://romamirzo.github.io/StubbsTest/",
+    href: "https://roman-mirzoian.github.io/StubbsTest/",
     src: "img/dribble_shot_idMetal.PNG"
   },
       reactMovieApp = {
-    href: "https://romamirzo.github.io/reactMovieApp/",
+    href: "https://roman-mirzoian.github.io/reactMovieApp/",
     src: "img/dribble_shot_reactMovieApp.PNG"
   };
   var siteInfo = [marketika, myCompany, siteKino, medicineSite, portfolio, passwordGenerator, snakeGame, converter, stubbsTest, reactMovieApp];

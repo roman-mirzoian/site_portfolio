@@ -17,11 +17,12 @@
     "webpack": "^4.44.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RomaMirzo/site_portfolio.git"
+    "url": "git+https://github.com/roman-mirzoian/site_portfolio.git"
   },
   "keywords": [
     "portfolio"
@@ -29,7 +30,7 @@
   "author": "Roman <mirzo1930@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/RomaMirzo/site_portfolio/issues"
+    "url": "https://github.com/roman-mirzoian/site_portfolio/issues"
   },
-  "homepage": "https://github.com/RomaMirzo/site_portfolio#readme"
+  "homepage": "https://github.com/roman-mirzoian/site_portfolio#readme"
 }
