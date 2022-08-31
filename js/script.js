@@ -1,15 +1,13 @@
-window.addEventListener('DOMContentLoaded', function () {
+"use strict";
 
-    "use strict";
+const aosApp = require("./parts/aosApp");
+const slowScrollToItem = require("./parts/slowScroll");
+const swiperConfig = require("./swiper/swiper-config");
+const initSplide = require("./splide-grid/splide-grid-init");
 
-    let aosApp = require('./parts/aosApp'),
-        slowScrollToItem = require('./parts/slowScroll'),
-        swiper = require('./parts/swiper'),
-        swiperItem = require('./parts/projectSwiperSite');
-    
-    swiperItem();
-    aosApp();
-    slowScrollToItem();
-    swiper();
+window.addEventListener("DOMContentLoaded", function () {
+  initSplide();
+  aosApp();
+  slowScrollToItem();
+  swiperConfig();
 });
-

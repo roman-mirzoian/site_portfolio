@@ -134,74 +134,6 @@ module.exports = aosApp;
 
 /***/ }),
 
-/***/ "./js/parts/projectSwiperSite.js":
-/*!***************************************!*\
-  !*** ./js/parts/projectSwiperSite.js ***!
-  \***************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-function SwiperItem() {
-  "use strict";
-
-  var marketika = {
-    href: "https://roman-mirzoian.github.io/layout_marketika/",
-    src: "img/dribble_shot_marketika.PNG"
-  },
-      myCompany = {
-    href: "https://roman-mirzoian.github.io/layout_myCompany/",
-    src: "img/dribble_shot_someproject.PNG"
-  },
-      siteKino = {
-    href: "https://roman-mirzoian.github.io/site_kino/",
-    src: "img/dribble_shot_films.PNG"
-  },
-      medicineSite = {
-    href: "https://roman-mirzoian.github.io/medicine_site/",
-    src: "img/dribble_shot_pills.PNG"
-  },
-      portfolio = {
-    href: "https://roman-mirzoian.github.io/site_portfolio/",
-    src: "img/dribble_shot_portfolio.PNG"
-  },
-      passwordGenerator = {
-    href: "https://roman-mirzoian.github.io/jsLoginPasswordGenerator/",
-    src: "img/dribble_shot_generator.PNG"
-  },
-      snakeGame = {
-    href: "https://roman-mirzoian.github.io/snake_game/",
-    src: "img/dribble_shot_snake.PNG"
-  },
-      converter = {
-    href: "https://roman-mirzoian.github.io/currencyConverterAjax/",
-    src: "img/dribble_shot_converter.PNG"
-  },
-      stubbsTest = {
-    href: "https://roman-mirzoian.github.io/StubbsTest/",
-    src: "img/dribble_shot_idMetal.PNG"
-  },
-      reactMovieApp = {
-    href: "https://roman-mirzoian.github.io/reactMovieApp/",
-    src: "img/dribble_shot_reactMovieApp.PNG"
-  };
-  var siteInfo = [marketika, myCompany, siteKino, medicineSite, portfolio, passwordGenerator, snakeGame, converter, stubbsTest, reactMovieApp];
-  var reverseSiteInfo = siteInfo.reverse();
-  var swiperDiv = document.getElementsByClassName("swiper-wrapper")[0];
-
-  function insertSwiperItem(siteInfo) {
-    for (var i = 0; i < siteInfo.length; i++) {
-      swiperDiv.insertAdjacentHTML('afterbegin', "<div class=\"swiper-slide\"><a href=\"".concat(siteInfo[i].href, "\" target=\"_blank\" class=\"potrfol_img\"><img src=\"").concat(siteInfo[i].src, "\" alt=\"myDribble-shot\"></a></div>")); // console.log(i);
-    }
-  }
-
-  ;
-  insertSwiperItem(reverseSiteInfo);
-}
-
-module.exports = SwiperItem;
-
-/***/ }),
-
 /***/ "./js/parts/slowScroll.js":
 /*!********************************!*\
   !*** ./js/parts/slowScroll.js ***!
@@ -241,50 +173,55 @@ module.exports = slowScrollToItem;
 
 /***/ }),
 
-/***/ "./js/parts/swiper.js":
-/*!****************************!*\
-  !*** ./js/parts/swiper.js ***!
-  \****************************/
+/***/ "./js/potrfolio-tile-data.js":
+/*!***********************************!*\
+  !*** ./js/potrfolio-tile-data.js ***!
+  \***********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-function swiper() {
-  var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 3,
-    slidesPerColumn: 2,
-    spaceBetween: 1,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true
-    },
-    breakpoints: {
-      1440: {
-        slidesPerView: 3,
-        slidesPerColumn: 2
-      },
-      1024: {
-        slidesPerView: 3,
-        slidesPerColumn: 2
-      },
-      768: {
-        slidesPerView: 2,
-        slidesPerColumn: 2
-      },
-      320: {
-        slidesPerView: 1,
-        slidesPerColumn: 2
-      }
-    }
-  });
-  var swiper1 = new Swiper('.swiper-container1', {
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
-    }
-  });
-}
-
-module.exports = swiper;
+var marketika = {
+  href: "https://roman-mirzoian.github.io/layout_marketika/",
+  src: "img/dribble_shot_marketika.jpg"
+},
+    myCompany = {
+  href: "https://roman-mirzoian.github.io/layout_myCompany/",
+  src: "img/dribble_shot_someproject.jpg"
+},
+    siteKino = {
+  href: "https://roman-mirzoian.github.io/site_kino/",
+  src: "img/dribble_shot_films.jpg"
+},
+    medicineSite = {
+  href: "https://roman-mirzoian.github.io/medicine_site/",
+  src: "img/dribble_shot_pills.jpg"
+},
+    portfolio = {
+  href: "https://roman-mirzoian.github.io/site_portfolio/",
+  src: "img/dribble_shot_portfolio.jpg"
+},
+    passwordGenerator = {
+  href: "https://roman-mirzoian.github.io/jsLoginPasswordGenerator/",
+  src: "img/dribble_shot_generator.jpg"
+},
+    snakeGame = {
+  href: "https://roman-mirzoian.github.io/snake_game/",
+  src: "img/dribble_shot_snake.jpg"
+},
+    converter = {
+  href: "https://roman-mirzoian.github.io/currencyConverterAjax/",
+  src: "img/dribble_shot_converter.jpg"
+},
+    stubbsTest = {
+  href: "https://roman-mirzoian.github.io/StubbsTest/",
+  src: "img/dribble_shot_idMetal.jpg"
+},
+    reactMovieApp = {
+  href: "https://roman-mirzoian.github.io/reactMovieApp/",
+  src: "img/dribble_shot_reactMovieApp.jpg"
+};
+var tilesData = [marketika, myCompany, siteKino, medicineSite, portfolio, passwordGenerator, snakeGame, converter, stubbsTest, reactMovieApp];
+module.exports = tilesData;
 
 /***/ }),
 
@@ -295,19 +232,138 @@ module.exports = swiper;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-window.addEventListener('DOMContentLoaded', function () {
-  "use strict";
+"use strict";
 
-  var aosApp = __webpack_require__(/*! ./parts/aosApp */ "./js/parts/aosApp.js"),
-      slowScrollToItem = __webpack_require__(/*! ./parts/slowScroll */ "./js/parts/slowScroll.js"),
-      swiper = __webpack_require__(/*! ./parts/swiper */ "./js/parts/swiper.js"),
-      swiperItem = __webpack_require__(/*! ./parts/projectSwiperSite */ "./js/parts/projectSwiperSite.js");
 
-  swiperItem();
+var aosApp = __webpack_require__(/*! ./parts/aosApp */ "./js/parts/aosApp.js");
+
+var slowScrollToItem = __webpack_require__(/*! ./parts/slowScroll */ "./js/parts/slowScroll.js");
+
+var swiperConfig = __webpack_require__(/*! ./swiper/swiper-config */ "./js/swiper/swiper-config.js");
+
+var initSplide = __webpack_require__(/*! ./splide-grid/splide-grid-init */ "./js/splide-grid/splide-grid-init.js");
+
+window.addEventListener("DOMContentLoaded", function () {
+  initSplide();
   aosApp();
   slowScrollToItem();
-  swiper();
+  swiperConfig();
 });
+
+/***/ }),
+
+/***/ "./js/splide-grid/splide-grid-init.js":
+/*!********************************************!*\
+  !*** ./js/splide-grid/splide-grid-init.js ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var tilesData = __webpack_require__(/*! ../potrfolio-tile-data */ "./js/potrfolio-tile-data.js");
+
+var tiles = getTilesElements();
+
+function initSplide() {
+  new Splide("#splide", {
+    grid: {
+      rows: 2,
+      cols: 2,
+      gap: {
+        row: "1rem",
+        col: "1rem"
+      }
+    },
+    breakpoints: {
+      800: {
+        grid: {
+          rows: 2,
+          cols: 1
+        }
+      },
+      600: {
+        grid: false
+      }
+    }
+  }).mount({
+    Grid: window.splide.Extensions.Grid
+  });
+
+  for (var i = 0; i < tiles.length; i++) {
+    var tile = tiles[i][0];
+    tile.insertAdjacentHTML("afterbegin", "\n        <a href=\"".concat(tilesData[i].href, "\" target=\"_blank\" class=\"potrfol_img\">\n          <img src=\"").concat(tilesData[i].src, "\" alt=\"myDribble-shot\">\n        </a>\n      "));
+  }
+}
+
+function getTilesElements() {
+  var number = 1;
+  var tiles = [];
+
+  function getTile() {
+    var id = "#tile".concat(number > 9 ? number : "0".concat(number));
+    var tile = document.querySelectorAll(id);
+
+    if (tile.length) {
+      tiles.push(tile);
+      number++;
+      getTile();
+    }
+  }
+
+  getTile();
+  return tiles;
+}
+
+module.exports = initSplide;
+
+/***/ }),
+
+/***/ "./js/swiper/swiper-config.js":
+/*!************************************!*\
+  !*** ./js/swiper/swiper-config.js ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function swiperConfig() {
+  var swiper = new Swiper(".swiper-container", {
+    slidesPerView: 3,
+    // slidesPerColumn: 4,
+    grid: {
+      rows: 2
+    },
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    } // breakpoints: {
+    //   1440: {
+    //     slidesPerView: 3,
+    //     slidesPerColumn: 2,
+    //   },
+    //   1024: {
+    //     slidesPerView: 3,
+    //     slidesPerColumn: 2,
+    //   },
+    //   768: {
+    //     slidesPerView: 2,
+    //     slidesPerColumn: 2,
+    //   },
+    //   320: {
+    //     slidesPerView: 1,
+    //     slidesPerColumn: 2,
+    //   },
+    // },
+
+  });
+  var swiper1 = new Swiper(".swiper-container1", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    }
+  });
+}
+
+module.exports = swiperConfig;
 
 /***/ })
 

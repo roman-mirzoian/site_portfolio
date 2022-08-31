@@ -4,6 +4,8 @@
   "description": "site portfolio",
   "main": "webpack.config.js",
   "dependencies": {
+    "@splidejs/splide": "^4.0.7",
+    "@splidejs/splide-extension-grid": "^0.4.1",
     "webpack-cli": "^3.3.12"
   },
   "devDependencies": {
@@ -17,7 +19,6 @@
     "webpack": "^4.44.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
   },
   "repository": {
